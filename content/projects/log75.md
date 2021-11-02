@@ -10,7 +10,7 @@ project:
 
 Log75 is a convenient, lightweight and customizable logging utility for Node.js
 
-![PREVIEW](https://raw.githubusercontent.com/wait-what/log75/master/assets/preview.png)
+![PREVIEW](./preview.png)
 
 ## Message types
 There are 6 message types available out of the box:
@@ -37,7 +37,7 @@ logger.info(
 )
 ```
 
-![PREVIEW](https://raw.githubusercontent.com/wait-what/log75/master/assets/table.png)
+![PREVIEW](./table.png)
 
 ```js
 logger.info(
@@ -48,4 +48,4 @@ logger.info(
 )
 ```
 
-[![PREVIEW](https://raw.githubusercontent.com/wait-what/log75/master/assets/table-with-separator.png)]()
+![PREVIEW](table-with-separator.png)

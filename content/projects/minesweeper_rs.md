@@ -8,7 +8,7 @@ project:
     featured: true
 ---
 
-![minesweeper-rs](https://github.com/wait-what/minesweeper-rs/raw/master/screenshot.png "minesweeper-rs")
+![minesweeper-rs](./screenshot.png "minesweeper-rs")
 
 This idea randomly popped into my head for no particular reason. I came up with all the algorithms in a few seconds, mostly by accident, and I was able to implement them in rust.
 

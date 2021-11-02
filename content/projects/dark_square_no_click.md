@@ -8,7 +8,7 @@ project:
     featured: true
 ---
 
-![Dark square, no click!](https://github.com/wait-what/dark-square-no-click/raw/master/screenshot.png "Dark square, no click!")
+![Dark square, no click!](./screenshot.png "Dark square, no click!")
 
 A game inspired by White tile, don't tap it!
 
