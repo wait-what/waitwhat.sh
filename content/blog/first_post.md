@@ -30,7 +30,7 @@ As everyone does, I am going to show off my custom markdown styling.
 
 _and this text is italics but it's actually gray_
 
-[this is a blue link that leads nowhere](.)
+[this is a blue link that leads to a very based person's website](https://infi.sh)
 
 `this text is monospaced`
 
