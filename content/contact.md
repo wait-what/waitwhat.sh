@@ -1,10 +1,9 @@
 # contact
 
 - discord **Wait What#4975**
-- email **{{< reveal "wa​it-wh​at (аt) wаi​twh​at.h​elp" >}}**
+- email **{{< reveal "wa​it-wh​at (аt) wаi​twh​at.sh" >}}**
 
 _note: you probably won't be able to reach me through anything other than discord and email_
-
 
 ## social
 - github [wait-what](https://github.com/wait-what)
