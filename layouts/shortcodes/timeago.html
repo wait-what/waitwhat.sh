@@ -1,0 +1,7 @@
+{{ $random := delimit (shuffle (split (md5 "sussy") "" )) "" }}
+
+<span id="{{ $random }}"></span>
+
+<script>
+    document.getElementById('{{ $random }}').innerHTML = timeago.format('{{ index .Params 0 }}')
+</script>

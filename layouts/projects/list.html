@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <h1>projects</h1>
+
+    <h2>featured</h2>
+    <div class="row">
+        {{- range where (where site.RegularPages "Section" "projects") ".Params.project.featured" true }}
+            {{ partial "project_card.html" . }}
+        {{- end -}}
+    </div>
+
+    <h2>other</h2>
+    {{- range where (where site.RegularPages "Section" "projects") ".Params.project.featured" false }}
+        {{ partial "project_card.html" . }}
+    {{- end -}}
+
+    <br><hr><br>
+    <a href="/">go home</a>
+    <br><br><br>
+
+    <script>
+        timeago.render(document.querySelectorAll('.timeago'))
+    </script>
+{{ end }}

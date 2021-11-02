@@ -1,0 +1,8 @@
+{{ $random := delimit (shuffle (split (md5 "sussy") "" )) "" }}
+
+<a
+    class="{{ $random }}"
+    onclick="Array.from(document.getElementsByClassName('{{ $random }}')).map(element => element.classList.toggle('hidden'))"
+>show</a>
+
+<span class="hidden {{ $random }}">{{ index .Params 0 }}</span>

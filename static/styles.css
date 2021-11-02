@@ -1,0 +1,250 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&display=swap');
+
+
+/* General */
+
+body {
+    background-color: #1d1c22;
+    font-family: 'Fira Sans', monospace;
+    color: #dfdfdf;
+    line-height: 1.8;
+}
+
+hr {
+    border-top: 2px dotted #3e3c4b;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+/* Scrollbar */
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff66 #00000033;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #00000033;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff66;
+}
+
+/* Selection */
+
+::-moz-selection {
+    background: #ffffff50;
+}
+
+::selection {
+    background: #ffffff50;
+}
+
+
+/* Hidden */
+
+.hidden {
+    display: none;
+}
+
+
+/* Centering */
+
+.center-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-v {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Responsive width */
+
+.container {
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* Responsive grid */
+
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+    div.grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Navbar */
+
+h1.navbar {
+    color: #222129 !important;
+    background-color: #dfdfdf;
+    line-height: 1.5em;
+    padding-left: 0.2em;
+    padding-right: 0.25em;
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+@media (max-width: 550px) {
+    h1.navbar {
+        margin-right: 0.1em;
+    }
+}
+
+a.navbar {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 0px 0px 0px 5px;
+    text-decoration-line: none;
+    font-size: 20px;
+    color: #dfdfdf;
+    width: fit-content;
+}
+
+a.navbar:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #dfdfdf;
+    width: 0%;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+a.navbar:hover:after {
+    width: 100%;
+}
+
+#navbar-h1 {
+    color:inherit;
+    text-decoration: none;
+}
+
+
+/* Section titles */
+
+h2.homepage-section {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+
+/* Markdown styling */
+
+h1:not(.blogpost), h2, h3, h4, h5, h6 {
+    color: #dfdfdf;
+}
+
+a:not(.navbar) {
+    font-weight: bold;
+    color: #a2d1ff;
+    text-decoration: none;
+}
+
+a:not(.navbar):hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: #ffa4a4;
+}
+
+em {
+    color: #9d9d9d;
+    font-style: normal;
+}
+
+blockquote {
+    margin-inline-start: 5px;
+    border-left: 5px solid #ffa4a4;
+}
+
+blockquote > p {
+    margin-inline-start: 10px;
+    color: #dfdfdf;
+}
+
+div > p {
+    text-align: justify;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+:not(pre) > code {
+    color: #e8e8e8;
+    padding: 1px 4px 1px 4px;
+    background-color: #ffa4a421;
+}
+
+pre {
+    padding: 10px 10px 10px 10px;
+    background-color: #00000021 !important;
+    overflow-x: auto;
+    max-width: 90vw;
+}
+
+
+/* Blog and project styling */
+
+h1.page-header {
+    margin-top: 6px;
+}
+
+em.page-header, em.card {
+    margin-right: 5px;
+}
+
+em.page-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a.page-header {
+    margin-right: 6px;
+}
+
+div.card {
+    background-color: #00000021;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    line-height: 1em;
+}
+
+div.card:hover {
+    cursor: pointer;
+}

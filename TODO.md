@@ -1,0 +1,12 @@
+- [x] Add projects
+    - [x] Personal site (featured)
+    - [x] Minesweeper (featured)
+    - [x] IP Dehash
+    - [x] log75 (featured)
+    - [x] rust-grid
+    - [x] dark-square-no-click (featured)
+- [x] Add posts
+    - [x] Introduction
+    - [x] Ultimate terminal experience with a tiling WM
+- [ ] Project icons (later)
+- [x] Project repo

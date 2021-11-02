@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="wait_what_" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="https://waitwhat.sh/favicon.png" />
+
+    <title>wait_what_</title>
+
+    <link rel='icon' type='image/png' href='/favicon.png'>
+    <link rel='stylesheet' href='/styles.css'>
+
+    <script src="/timeago.min.js"></script>
+</head>
+
+<body>
+    <div class="center-h">
+        <div class="container">
+            <div>
+                <h1 class="center-h navbar">
+                    <a id="navbar-h1" href="/">wait_what_</a>
+                </h1>
+
+                <a class="navbar" href="/">home</a>
+                <a class="navbar" href="/projects/">projects</a>
+                <a class="navbar" href="/blog/">blog</a>
+                <a class="navbar" href="/contact/">contact</a>
+
+                <hr class="navbar">
+            </div>
+
+            <div id="content">
+                {{- block "main" . }}{{- end }}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

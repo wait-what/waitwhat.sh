@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <h1>hello</h1>
+    I am <strong>wait_what_</strong>.
+    I like to write code and mess with electronics and 3d printers
+    and stuff. I use <a href="https://archlinux.org/">Arch</a> btw.
+
+    <br><br>
+
+    <h2 class="homepage-section">featured projects</h2> <a href="/projects" class="homepage-section">see all</a>
+    <div class="grid">
+        {{- range where (where site.RegularPages "Section" "projects") ".Params.project.featured" true | first 4 }}
+            {{ partial "project_card.html" . }}
+        {{- end -}}
+    </div>
+
+    <h2 class="homepage-section">latest posts</h2> <a href="/blog" class="homepage-section">see all</a>
+    {{- range where site.RegularPages "Section" "blog" | first 2 }}
+        {{ partial "blog_card.html" . }}
+    {{- end -}}
+
+    <script>
+        timeago.render(document.querySelectorAll('.timeago'))
+    </script>
+{{ end }}

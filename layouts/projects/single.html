@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <em class="timeago page-header" datetime="{{ .Date }}"></em>
+    {{ if .Params.project.repo }}
+        <em class="page-header">·</em>
+        <a href="{{ .Params.project.repo }}" class="page-header">open repo</a>
+    {{ end }}
+    <em class="page-header">·</em>
+    <em class="page-header">{{ .Params.project.language }}</em>
+
+    <h1 class="page-header">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <br><hr><br>
+    <a href="/">go home</a>
+    <em class="page-footer">·</em>
+    <a href="/projects">all projects</a>
+    <br><br><br>
+
+    <script>
+        timeago.render(document.querySelectorAll('.timeago'))
+    </script>
+{{ end }}

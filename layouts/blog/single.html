@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <em class="timeago page-header" datetime="{{ .Date }}"></em>
+    <em class="page-header">·</em>
+    <em class="page-header">reading time: {{ math.Round (div (countwords .Content) 220.0) }} min</em>
+
+    <h1 class="page-header">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <br><hr><br>
+    <a href="/">go home</a>
+    <em class="page-footer">·</em>
+    <a href="/blog">all posts</a>
+    <br><br><br>
+
+    <script>
+        timeago.render(document.querySelectorAll('.timeago'))
+    </script>
+{{ end }}
