@@ -221,6 +221,10 @@ pre {
     max-width: 90vw;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* Blog and project styling */
 
