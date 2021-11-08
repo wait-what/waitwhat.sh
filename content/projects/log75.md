@@ -26,8 +26,6 @@ You can easily add more message types by extending the class.
 ## Tables
 Log75 can create neat looking tables for you!
 
-Use `logger.createBox(string)` to create your box. This function does not output the message, you must do that yourself.
-
 ```js
 logger.info(
     logger.table(
@@ -40,12 +38,10 @@ logger.info(
 ![PREVIEW](./table.png)
 
 ```js
-logger.info(
-    logger.table([
-        'And ones with',
-        'a separator'
-    ])
-)
+logger.table([
+    'And ones with',
+    'a separator'
+], 'info')
 ```
 
 ![PREVIEW](table-with-separator.png)
