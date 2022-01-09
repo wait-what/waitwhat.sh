@@ -219,7 +219,7 @@ pre {
     background-color: #0000001c !important;
     overflow-x: auto;
     max-width: 90vw;
-    border: 2px dotted #ffffff1e;
+    border: 2px solid #ffffff1e;
 }
 
 img {
@@ -258,7 +258,7 @@ div.card {
     margin-left: 0.5em;
     margin-right: 0.5em;
     line-height: 1em;
-    border: 2px dotted #ffffff1e;
+    border: 2px solid #ffffff1e;
 }
 
 div.card:hover {
