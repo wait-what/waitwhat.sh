@@ -14,7 +14,7 @@ rust-grid is a very minimal library to store large grids of any type in memory, 
 ## Why?
 I was trying to implement [Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in rust, and I needed a way to store the grid in memory. I made a huge grid and it overflowed the stack, so I made a cool library to store it in a 2D Vec.
 
-I later found out that [better ones](https://crates.io/crates/grid) already exist, but it was too late. At least I made and [published a crate](https://crates.io/crates/rust-grid) - it was fun.
+I later found out that [better ones](https://crates.io/crates/grid) already exist, but it was too late. At least I made and [published a crate](https://crates.io/crates/rust-grid) for the first time - it was fun.
 
 ## Example
 ```rs
