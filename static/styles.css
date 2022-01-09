@@ -6,14 +6,14 @@
 /* General */
 
 body {
-    background-color: #1d1c22;
+    background-color: #17181d;
     font-family: 'Fira Sans', monospace;
     color: #dfdfdf;
     line-height: 1.8;
 }
 
 hr {
-    border-top: 2px dotted #3e3c4b;
+    border-top: 2px dotted #ffffff1e;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -42,11 +42,11 @@ body {
 /* Selection */
 
 ::-moz-selection {
-    background: #ffffff50;
+    background: #ffffff40;
 }
 
 ::selection {
-    background: #ffffff50;
+    background: #ffffff40;
 }
 
 
@@ -108,9 +108,9 @@ div.grid {
 /* Navbar */
 
 h1.navbar {
-    color: #222129 !important;
+    color: #17181d !important;
     background-color: #dfdfdf;
-    line-height: 1.5em;
+    line-height: 1.8em;
     padding-left: 0.2em;
     padding-right: 0.25em;
     margin-right: 0.5em;
@@ -151,7 +151,7 @@ a.navbar:hover:after {
 }
 
 #navbar-h1 {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -216,13 +216,15 @@ code {
 
 pre {
     padding: 10px 10px 10px 10px;
-    background-color: #00000021 !important;
+    background-color: #0000001c !important;
     overflow-x: auto;
     max-width: 90vw;
+    border: 2px dotted #ffffff1e;
 }
 
 img {
     max-width: 100%;
+    border: 2px solid #4f4e57a6;
 }
 
 
@@ -245,12 +247,18 @@ a.page-header {
     margin-right: 6px;
 }
 
+a.card {
+    margin-right: 8px;
+}
+
 div.card {
-    background-color: #00000021;
+    background-color: #0000001c;
     padding: 20px 20px 20px 20px;
     margin-bottom: 1em;
-    margin-right: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     line-height: 1em;
+    border: 2px dotted #ffffff1e;
 }
 
 div.card:hover {
