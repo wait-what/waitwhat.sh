@@ -69,13 +69,13 @@ Once it spits out an .onion domain at you, it's yours! You can stop the generati
 
 ## Docker configuration
 
-This `Dockerfile` is based on [bariskisir's](https://github.com/bariskisir/HiddenServiceReverseProxy) creation, that unfortunately, did not work for me.
-
 First, create a directory called `tor` in the same directory where your `docker-compose.yaml` is located.
 
 Now, put the `hs_ed25519_secret_key` in it and run `chmod 400 ./tor/hs_ed25519_secret_key` to make sure it's not readable by anyone (or it won't work).
 
 You can just blindly copy this into a file called `Dockerfile` inside the `tor` directory you just created:
+
+> This `Dockerfile` is based on [bariskisir's](https://github.com/bariskisir/HiddenServiceReverseProxy) creation, that unfortunately, did not work for me.
 
 ```Dockerfile
 FROM alpine:latest
