@@ -121,16 +121,26 @@ br.navbar {
     display: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 578px) {
     br.navbar {
         display: inline-block;
+    }
+
+    a.navbar {
+        padding: 0px 0px 0px 3px;
+    }
+}
+
+@media (max-width: 360px) {
+    a#home {
+        display: none;
     }
 }
 
 a.navbar {
     display: inline-block;
     margin-bottom: 6px;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 3px;
     text-decoration-line: none;
     font-size: 20px;
     color: #dfdfdf;
@@ -263,4 +273,16 @@ div.card {
 
 div.card:hover {
     cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    em.card-lang {
+        display: none;
+    }
+}
+
+@media (max-width: 386px) {
+    em.card-time {
+        display: none;
+    }
 }

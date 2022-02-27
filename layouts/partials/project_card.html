@@ -1,9 +1,9 @@
 <div class="card" onclick="window.location.assign('{{ .RelPermalink }}')">
     <a class="card" href="{{ .RelPermalink }}">{{ .Title }}</a>
 
-    <em class="timeago card" datetime="{{ .Date }}"></em>
-    <em class="card">·</em>
-    <em class="card">{{ .Params.project.language }}</em>
+    <em class="timeago card card-time" datetime="{{ .Date }}"></em>
+    <em class="card card-lang">·</em>
+    <em class="card card-lang">{{ .Params.project.language }}</em>
 
     <br><br>
 

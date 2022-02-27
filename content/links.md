@@ -1,4 +1,4 @@
-# services
+# links
 
 This is a collection of services hosted by me
 
@@ -11,7 +11,10 @@ This is a collection of services hosted by me
 ## related
 
 - [miruku.cafe](https://miruku.cafe/) is a federated social platform, part of the **fediverse**
-    - Also available on Tor _(why? idk)_ http://mirukuuupyxuye2sd5llt7phcdvi7glqwrwdnfz6iq2jv4suzrvvknad.onion
+    - Also available on Tor _(why? idk)_
+    ```
+    http://mirukuuupyxuye2sd5llt7phcdvi7glqwrwdnfz6iq2jv4suzrvvknad.onion
+    ```
 
 - [tessel.one](https://tessel.one) is the website for the **Tesselone** game developer group
     - [git.tessel.one](https://git.tessel.one) is a [Gitea](https://gitea.com/) insteance for Tesselone, featuring releases, wiki, and more
