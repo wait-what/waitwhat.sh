@@ -71,17 +71,16 @@ Once it spits out an .onion domain at you, it's yours! You can stop the generati
 
 First, create a directory called `tor` in the same directory where your `docker-compose.yaml` is located.
 
-Now, put the `hs_ed25519_secret_key` in it and run `chmod 400 ./tor/hs_ed25519_secret_key` to make sure it's not readable by anyone (or it won't work).
+Now, put the `hs_ed25519_secret_key` in it.
 
 You can just blindly copy this into a file called `Dockerfile` inside the `tor` directory you just created:
 
-> This `Dockerfile` is based on [bariskisir's](https://github.com/bariskisir/HiddenServiceReverseProxy) creation, that unfortunately, did not work for me.
+> This `Dockerfile` is based on [bariskisir's](https://github.com/bariskisir/HiddenServiceReverseProxy) creation, that unfortunately, did not work for me properly.
 
 ```Dockerfile
 FROM alpine:latest
 RUN apk update && apk add tor
-RUN chown -R tor /etc/tor
-CMD ["sh","-c","rm -f /etc/tor/torrc && touch /etc/tor/torrc && echo 'HiddenServiceDir /var/lib/tor/hidden_service/' >> /etc/tor/torrc && echo 'HiddenServicePort 80 '$HIDDEN_SERVICE_PORT >> /etc/tor/torrc && tor -f /etc/tor/torrc"]
+CMD [ "sh", "-c", "echo HiddenServiceDir /tor/service > /tor/config && echo HiddenServicePort $SERVICE >> /tor/config && tor -f /tor/config" ]
 ```
 
 At this point, your directory structure should look like this:
@@ -93,27 +92,31 @@ At this point, your directory structure should look like this:
     └── hs_ed25519_secret_key
 ```
 
+Lock down the permissions for the tor directory, else tor will refuse to work.
+
+```sh
+chmod -R 400 tor
+```
+
 Now add the `tor` service to your `docker-compose.yaml` file.
 
 ```yaml
 version: "3"
 
 services:
-  # Pretend like this is whatever service you're already running
-  web:
-    image: nginx:latest
-    restart: unless-stopped
-    ports:
-      - 80:8080 # Adjust 8080 to whatever port you're using
+  web: # Imagine this is the service you're already running
+    image: androw/uhttpd
+    volumes:
+      - ./www:/www
 
   tor:
     build: tor/
     links:
       - web
     environment:
-        HIDDEN_SERVICE_PORT: web:8080 # Adjust 8080 to whatever port you're using
+        SERVICE: 80 web:80
     volumes:
-      - ./tor:/var/lib/tor/hidden_service
+      - ./tor:/tor/service
 ```
 
 Now just `docker-compose up -d` to refresh your configuration and you're done!
