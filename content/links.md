@@ -6,6 +6,8 @@ This is a collection of services hosted by me
 
 - [files.waitwhat.sh](https://files.waitwhat.sh/) is a collection of random files
 
+- [plausible.waitwhat.sh/waitwhat.sh](https://plausible.waitwhat.sh/waitwhat.sh) is a public analytics page for this site
+
 - [killing-waitwhat.is-super.fun](https://killing-waitwhat.is-super.fun/) is an instance of a [Powoffie](/projects/powoffie/) relay to my system
 
 ## related
