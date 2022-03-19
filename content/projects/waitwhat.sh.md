@@ -5,7 +5,7 @@ description: My personal website built using Hugo
 project:
     language: hugo
     repo: https://github.com/wait-what/waitwhat.sh
-    featured: true
+    featured: false
 ---
 
 `waitwhat.sh` is the website you are on right now!
