@@ -95,7 +95,7 @@ At this point, your directory structure should look like this:
 Lock down the permissions for the tor directory, else tor will refuse to work.
 
 ```sh
-chmod -R 400 tor
+chmod 400 tor tor/hs_ed25519_secret_key
 ```
 
 Now add the `tor` service to your `docker-compose.yaml` file.
@@ -108,12 +108,16 @@ services:
     image: androw/uhttpd
     volumes:
       - ./www:/www
+    ports:
+      - 80:80
 
   tor:
     build: tor/
     links:
       - web
     environment:
+        # 80 is the port on the .onion
+        # web:80 is port on the container above
         SERVICE: 80 web:80
     volumes:
       - ./tor:/tor/service
