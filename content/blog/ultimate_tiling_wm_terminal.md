@@ -8,7 +8,7 @@ So, you're using a [tiling window manager](https://en.wikipedia.org/wiki/Tiling_
 
 > This guide is mostly targeted at Arch linux users
 
-![Result](./alacritty.png "Result")
+![Result](alacritty.png "Result")
 
 ## Installation
 First of all, you will need to install some packages. Some of those packages are from [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) so it would be useful to have an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) like [paru](https://github.com/morganamilo/paru) or [yay](https://github.com/Jguer/yay) installed.

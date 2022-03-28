@@ -6,7 +6,7 @@ date: 2022-02-16
 
 So, you're running a service (for example, a website) using Docker and you want it to also be available as an `.onion` service on [tor](https://www.torproject.org/), perhaps to improve the anonimity of your users or for fun. I went through all the pain of figuring it out for you.
 
-![Tor logo](./tor_logo.jpg "Tor logo")
+![Tor logo](tor_logo.jpg "Tor logo")
 
 ## Tor domains
 
