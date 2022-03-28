@@ -1,4 +1,7 @@
 # Hugo artifacts
 /resources
-/public
 .hugo_build.lock
+
+# Weird deploy stuff
+.gitmodules
+/public
