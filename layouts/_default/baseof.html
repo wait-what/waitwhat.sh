@@ -7,17 +7,11 @@
 
     <title>wait_what_</title>
 
-    {{ if .Title }}
-        <meta property="og:title" content="{{ .Title }}" />
-    {{ else }}
-        <meta property="og:title" content="wait_what" />
-    {{ end }}
+    {{ $pageTitle := (cond (ne .Title "") .Title "wait_what_") }}
+    <meta property="og:title" content="{{ $pageTitle }}" />
 
-    {{ if .Description }}
-        <meta property="og:description" content="{{ .Description }}" />
-    {{ else }}
-        <meta property="og:description" content="i use arch btw" />
-    {{ end }}
+    {{ $pageDescription := (cond (ne .Description "") .Description "i use arch btw") }}
+    <meta property="og:description" content="{{ $pageDescription }}" />
 
     <meta property="og:site_name" content="wait_what_" />
     <meta property="og:url" content="{{ .Permalink }}" />
