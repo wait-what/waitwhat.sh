@@ -6,8 +6,8 @@
 - github [wait-what](https://github.com/wait-what)
 
 ## public keys
-- **ssh** [download](waitwhat.sh_authorized_keys.txt)
-- **gpg** [download](waitwhat.sh_pgp_pubkey.txt)
+- **ssh** [download](/contact/waitwhat.sh_authorized_keys.txt)
+- **gpg** [download](/contact/waitwhat.sh_pgp_pubkey.txt)
 
 ## crypto
 
