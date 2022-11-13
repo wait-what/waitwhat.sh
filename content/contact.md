@@ -2,16 +2,14 @@
 
 - discord **Wait What#4975**
 - email **{{< reveal "wa​it-wh​at (аt) wаi​twh​at.sh" >}}**
-
-_note: you probably won't be able to reach me through anything other than discord and email_
-
-## social
+- fediverse [wait_what_@miruku.cafe](https://miruku.cafe/@wait_what_)
 - github [wait-what](https://github.com/wait-what)
-- gitlab [wait_what_](https://gitlab.com/users/Wait_What_/projects)
-- twitter [@Wait_What_t](https://twitter.com/Wait_What_t)
+
+## public keys
+- **ssh** [download](waitwhat.sh_authorized_keys.txt)
+- **gpg** [download](waitwhat.sh_pgp_pubkey.txt)
 
 ## crypto
-do you want to send me money for some reason?
 
 - **monero** xmr _{{< reveal 4AEwarZKn9d9sERaZTTxyqRRerSpKXdw5QwoTsYowHNgJxyckaTp6sngiAVHmMKsETer3cvWVxd1FjFWHFFzkP5cJCMKsbS >}}_
 - **tether** usdt _{{< reveal 0x348381B3C5004665ad95BDf766b37F99AE55F763 >}}_
