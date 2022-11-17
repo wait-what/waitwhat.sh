@@ -2,7 +2,7 @@
 
 - discord **Wait What#4975**
 - fediverse [wait_what_@miruku.cafe](https://miruku.cafe/@wait_what_)
-- revolt [**wait_what_**](https://revolt.chat)
+- revolt [wait_what_](https://revolt.chat)
 - email **{{< reveal "wa​it-wh​at (аt) wаi​twh​at.sh" >}}**
 - github [wait-what](https://github.com/wait-what)
 
