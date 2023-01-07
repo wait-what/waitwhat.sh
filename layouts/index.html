@@ -24,5 +24,20 @@
 
     <script>
         timeago.render(document.querySelectorAll('.timeago'))
+
+        let password = ''
+        let timeout = null
+        let resetTimeout = () => {
+            clearTimeout(timeout)
+            timeout = setTimeout(() => {
+                password = ''
+            }, 2000)
+        }
+
+        document.addEventListener('keydown', ({ key }) => {
+            resetTimeout()
+            password += key
+            if (password == 'cute') window.location.href = '/easteregg.txt'
+        })
     </script>
 {{ end }}
