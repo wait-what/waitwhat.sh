@@ -1,6 +1,9 @@
 # links
 
-This is a collection of public services hosted by me
+This is a collection of public services hosted by me.
+
+## Uptime
+- [stats.uptimerobot.com/w5KPGhvMqy](https://stats.uptimerobot.com/w5KPGhvMqy) is a public uptime monitor for all of my services
 
 ## Miruku.cafe
 - [miruku.cafe](https://miruku.cafe/) is a federated social platform ([Nyankey](https://github.com/mirukucafe/nyankey)), part of the **fediverse** that includes Mastodon, Pleroma, Misskey and many other platforms
@@ -16,11 +19,8 @@ This is a collection of public services hosted by me
 - **january** (image proxy)
 - **vortex** (voice server)
 
-## Tesselone
-- [tessel.one](https://tessel.one) is the website for the **Tesselone** game developer group
-- [git.tessel.one](https://git.tessel.one) is a [Gitea](https://gitea.com/) insteance for Tesselone developers and testers
-
 ## Others
+- [tessel.one](https://tessel.one) is the website for the **Tesselone** game developer group
 - [files.waitwhat.sh](https://files.waitwhat.sh/) is a collection of random files
 
 {{< comments "Links page" >}}
