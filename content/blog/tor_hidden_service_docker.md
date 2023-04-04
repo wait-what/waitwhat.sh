@@ -142,7 +142,7 @@ Now open tor and try to access your new hidden `.onion` service on the _dark web
 
 ## Notes
 
-If your website accesses domain names that are not `.onion` domains, it kind of defeats the purpose, so you should either serve those files on .onion domains as well, or use a proxy like [Privoxy](https://www.privoxy.org/) to redirect all requests to the clearnet to your tor service.
+If your website accesses domain names that are not `.onion` domains, it kind of defeats the purpose, so you should either serve those files on .onion domains as well, or use a proxy like [Privoxy](https://www.privoxy.org/) to redirect all requests to the clearnet to your tor service. Guide coming (not) soon.
 
 ## Troubleshooting
 
