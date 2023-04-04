@@ -4,6 +4,7 @@ This is a collection of public services hosted by me.
 
 ## Uptime
 - [stats.uptimerobot.com/w5KPGhvMqy](https://stats.uptimerobot.com/w5KPGhvMqy) is a public uptime monitor for all of my services
+- [status.revolt.chat](https://status.revolt.chat/) is specific to the Revolt services, some of which are hosted by me
 
 ## Miruku.cafe
 - [miruku.cafe](https://miruku.cafe/) is a federated social platform ([Nyankey](https://github.com/mirukucafe/nyankey)), part of the **fediverse** that includes Mastodon, Pleroma, Misskey and many other platforms
