@@ -9,6 +9,15 @@
 - **gpg** [download](/contact/waitwhat.sh_pgp_pubkey.txt)
 
 ## crypto
-- **monero** xmr _{{< reveal 4AEwarZKn9d9sERaZTTxyqRRerSpKXdw5QwoTsYowHNgJxyckaTp6sngiAVHmMKsETer3cvWVxd1FjFWHFFzkP5cJCMKsbS >}}_
-- **etherum** eth _{{< reveal 0x348381B3C5004665ad95BDf766b37F99AE55F763 >}}_
-- **bitcoin** btc _{{< reveal bc1qwf4mzvdxjqtlxtzj7ja92l9uvq09e8uegckt7n >}}_
+- **monero** `xmr` _preferred_
+```
+4AEwarZKn9d9sERaZTTxyqRRerSpKXdw5QwoTsYowHNgJxyckaTp6sngiAVHmMKsETer3cvWVxd1FjFWHFFzkP5cJCMKsbS
+```
+- **etherum network** `eth` / `usdt` / `...`
+```
+0x348381B3C5004665ad95BDf766b37F99AE55F763
+```
+- **bitcoin** `btc`
+```
+bc1qwf4mzvdxjqtlxtzj7ja92l9uvq09e8uegckt7n
+```
