@@ -88,6 +88,29 @@ example.lan {
 }
 ```
 
+## Client certificates (optional)
+You can also use client certificates to protect services from unauthorized access. If you don't know how that works, it's something like SSH keys, except for the web.
+
+```caddyfile
+(tls_lan_ca_with_auth) {
+	tls {
+		issuer internal {
+			ca lan_ca
+		}
+
+		client_auth {
+			mode require
+			trust_pool file /etc/caddy/lan_ca/ca.crt
+		}
+	}
+}
+
+example.lan {
+    import tls_lan_ca_with_auth
+    respond "https on a local domain, only accessible with a client certificate"
+}
+```
+
 ## Manually issuing certificates
 You can also manually issue certificates, for use outside of Caddy.
 
@@ -100,6 +123,21 @@ easyrsa --nopass build-server-full "example.lan"
 
 You can find the certificate in `pki/issued/example.lan.crt` and the key in `pki/private/example.lan.key`.
 
+We can do the same for client certificates:
+
+```sh
+cd lan_ca
+easyrsa --nopass build-client-full "laptop"
+```
+
+You can find the certificate in `pki/issued/laptop.crt` and `pki/private/laptop.key`
+
+For some clients, the certificate may need to be converted to `.p12` format (in this case with a blank password):
+
+```sh
+openssl pkcs12 -export -out laptop.p12 -inkey pki/private/laptop.key -in pki/issued/laptop.crt -certfile pki/ca.crt -passout pass:
+```
+
 ## Installing the CA
 Now that we have our CA, we need to install it on our devices, so that browsers would trust the certificates issued by it.
 
@@ -110,6 +148,8 @@ In **Firefox**, you can do this by going to `Preferences` > `Privacy & Security`
 
 In **Chromium**-based browsers, you can do this by going to `Settings` > `Privacy and security` > `Security` > `Manage certificates` > `Authorities` > `Import`.
 
+> Client certificates can be installed in the browser similarly
+
 ### Windows
 On Windows, you can install the CA by double-clicking on the `ca.crt` file, and clicking on "Install Certificate". Then, choose "Local Machine" and "Trusted Root Certification Authorities".
 
@@ -119,8 +159,10 @@ On Android, you can install the CA by going to `Settings` > `Security` > `More s
 This is going to cause a warning to appear in your notifications, saying `Network may be monitored`. This is normal, as you are installing a custom CA. It is safe to ignore this warning as long as you keep the CA key safe.
 
 There are several ways to avoid this warning:
-- Install the CA in the [browser](#browser) instead
+- Install the CA in the [browser](#browser) instead.
 - Use a [Magisk](https://github.com/topjohnwu/Magisk) module such as [movecert](https://github.com/Magisk-Modules-Repo/movecert)
+
+> Firefox on Android does not trust system CAs by default. You'll need to go into Firefox settings, spam the Firefox logo and enable the option in Secret settings.
 
 ### Linux
 Depending on your distribution and/or DE, you might be able to install the CA by double-clicking on the `ca.crt` file, and clicking "Import".
