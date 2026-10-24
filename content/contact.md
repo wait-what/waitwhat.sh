@@ -1,7 +1,8 @@
 # contact
-- discord **wait_what_** _preferred!_
-- fediverse [wait_what_@miruku.cafe](https://miruku.cafe/@wait_what_)
+- matrix **@ww:miruku.cafe** _preferred!_
+- discord **@wait_what_** _preferred!_
 - email **{{< reveal "wa​it-wh​at (аt) wаi​twh​at.sh" >}}**
+- fediverse [wait_what_@miruku.cafe](https://miruku.cafe/@wait_what_)
 - github [wait-what](https://github.com/wait-what)
 
 ## public keys
@@ -9,7 +10,7 @@
 - **gpg** [download](/contact/waitwhat.sh_pgp_pubkey.txt)
 
 ## crypto
-- **monero** `xmr` _preferred!_
+- **monero** `xmr`
 ```
 4AEwarZKn9d9sERaZTTxyqRRerSpKXdw5QwoTsYowHNgJxyckaTp6sngiAVHmMKsETer3cvWVxd1FjFWHFFzkP5cJCMKsbS
 ```
